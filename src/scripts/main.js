@@ -53,4 +53,31 @@ jQuery(document).ready(function($){
 		function () {
 			sections.not($(this)).removeClass("unhover");
 		});
+
+	//slider
+	jQuery(document).ready(function($) {
+			$('.slider-wrap').unslider({
+				autoplay : true
+			});
+		});
+
 	});
+
+window.onload = ymaps.ready(function () {
+	var myMap = new ymaps.Map("map", {
+		center: [44.95912356, 34.10562413],
+		zoom: 13
+	});
+
+	var a = new ymaps.Placemark([44.94466062, 34.09975469], {
+		hintContent: 'Кочерга - магазин шашлыка',
+		balloonContent: 'на Турецкой, 28',
+		iconContent : 'Кочерга - магазин шашлыка',
+		balloonContentHeader : 'Кочерга - магазин шашлыка'
+	},{
+		preset :'islands#darkOrangeStretchyIcon'
+	});
+
+
+	myMap.geoObjects.add(a);
+});
