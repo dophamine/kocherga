@@ -2,7 +2,6 @@
 // @import 'media'
 
 
-
 $color: rgb(44, 89, 123)
 $color3: #cd0808
 $color2: #f15a23
@@ -66,6 +65,45 @@ a
 
 main
 	background-color: #FFF
+
+.decor-panel
+	padding-top: 10px
+	.decor
+		position: relative
+
+		vertical-align: middle
+		min-height: 60px
+		text-align: center
+		span
+			position: absolute
+			left: 60px
+			width: 70%
+			display: block
+			top: 50%
+			transform: translate(0,-50%)
+		&:after
+			content: ''
+			width: 60px
+			height: 60px
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0,-50%)
+			background: url("../images/decor.png") no-repeat
+	.pr-1:after
+		background-position: 0 0
+	.pr-2:after
+		background-position: -60px 0
+	.pr-3:after
+		background-position: 0 -60px
+	.pr-4:after
+		background-position: -60px -60px
+	.pr-5:after
+		background-position: -120px 0
+	.pr-6:after
+		background-position: -120px -60px
+
+
 
 #categories
 	background-color: #fefefe
