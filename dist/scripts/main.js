@@ -57,7 +57,11 @@ jQuery(document).ready(function($){
 	//slider
 	jQuery(document).ready(function($) {
 			$('.slider-wrap').unslider({
-				autoplay : true
+				autoplay : true,
+				arrows: {
+					prev: '<a class="unslider-arrow prev"><</a>',
+					next: '<a class="unslider-arrow next">></a>'
+				}
 			});
 		});
 
