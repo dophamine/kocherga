@@ -82,6 +82,16 @@ window.onload = ymaps.ready(function () {
 		preset :'islands#darkOrangeStretchyIcon'
 	});
 
+	var b = new ymaps.Placemark([44.59138563, 33.49232170], {
+		hintContent: 'Кочерга - магазин шашлыка',
+		balloonContent: 'на Руднева, 39В',
+		iconContent : 'Кочерга - магазин шашлыка',
+		balloonContentHeader : 'Кочерга - магазин шашлыка'
+	},{
+		preset :'islands#darkOrangeStretchyIcon'
+	});
+
 
 	myMap.geoObjects.add(a);
+	myMap.geoObjects.add(b);
 });
